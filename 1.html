@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IApedia 2025</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('aside');
+            sidebar.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-indigo-50 text-gray-900 font-sans">
+    <!-- Encabezado -->
+    <header class="bg-white shadow-2xl border-b-2 border-indigo-200 flex items-center justify-between px-6 py-4">
+        <div class="flex items-center">
+            <svg class="w-52 h-10 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 32" fill="none" aria-label="Logo Wikipedia">
+                <circle cx="16" cy="16" r="14" stroke="#1e40af" stroke-width="2" fill="#dbeafe"/>
+                <path d="M16 6 L24 16 L16 26 L8 16 Z" fill="#1e40af"/>
+                <text x="40" y="20" font-family="serif" font-size="22" fill="#1e40af">IApedia</text>
+            </svg>
+        </div>
+        <div class="flex items-center">
+            <input type="text" placeholder="Buscar en Wikipedia" class="border-2 border-indigo-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-4 focus:ring-indigo-300 w-72" />
+            <button class="bg-indigo-600 text-white px-6 py-2 rounded-r-lg hover:bg-indigo-700 transition duration-300 shadow-md">Buscar</button>
+        </div>
+        <button id="sidebar-toggle" class="md:hidden text-indigo-600 ml-4" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="bg-indigo-100 border-b border-indigo-300 py-3 px-6">
+        <ul class="flex flex-wrap space-x-8 text-indigo-800 font-medium">
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Página principal</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Contenidos</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Artículos destacados</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Actualidad</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Artículo al azar</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Donar a Wikipedia</a></li>
+            <li><a href="#" class="hover:text-indigo-600 hover:underline transition duration-200">Tienda de Wikipedia</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra lateral -->
+    <aside class="bg-gradient-to-b from-white to-indigo-50 shadow-lg border-r-2 border-indigo-200 w-80 fixed left-0 top-32 bottom-0 overflow-y-auto p-6 hidden md:block">
+        <h3 class="font-bold text-xl mb-6 text-indigo-900">Contenidos</h3>
+        <ol class="list-decimal pl-6 space-y-3 text-indigo-700">
+            <li><a href="#introduccion" class="hover:text-indigo-500 hover:underline transition">Introducción</a></li>
+            <li><a href="#objetivos" class="hover:text-indigo-500 hover:underline transition">Objetivos de la investigación</a></li>
+            <li><a href="#historia" class="hover:text-indigo-500 hover:underline transition">Historia y evolución de la IA</a></li>
+            <li><a href="#impacto-laboral" class="hover:text-indigo-500 hover:underline transition">Impacto en el mundo laboral</a></li>
+            <li><a href="#habilidades-cognitivas" class="hover:text-indigo-500 hover:underline transition">Transformación de habilidades cognitivas</a></li>
+            <li><a href="#perspectivas-eticas" class="hover:text-indigo-500 hover:underline transition">Perspectivas éticas, sociales y ambientales</a></li>
+            <li><a href="#conclusion" class="hover:text-indigo-500 hover:underline transition">Conclusión</a></li>
+        </ol>
+        <h3 class="font-bold text-xl mt-8 mb-6 text-indigo-900">Idiomas</h3>
+        <ul class="pl-6 space-y-3 text-indigo-700">
+            <li><a href="#" class="hover:text-indigo-500 hover:underline transition">English</a></li>
+            <li><a href="#" class="hover:text-indigo-500 hover:underline transition">Français</a></li>
+            <li><a href="#" class="hover:text-indigo-500 hover:underline transition">Deutsch</a></li>
+        </ul>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1eb35c1-d5c4-4de4-bcdb-a61012c5d89f.png" alt="Icono representativo de un cerebro humano conectado a un circuito digital, simbolizando la fusión entre la inteligencia humana y la artificial" class="mt-6 w-full rounded-lg shadow-md" />
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="md:ml-80 p-10 max-w-5xl">
+        <h1 class="text-5xl font-extrabold mb-6 text-gray-900 border-b-4 border-indigo-300 pb-4 tracking-tight">Entre algoritmos y neuronas: el impacto de la Inteligencia Artificial en el trabajo y en nuestras mentes</h1>
+
+        <section id="introduccion" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Introducción</h2>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                La inteligencia artificial (IA) dejó de ser una idea de ciencia ficción para convertirse en una realidad cotidiana que transforma tanto la economía como la manera en que pensamos. Desde los primeros programas que resolvían operaciones lógicas en los años 50, hasta los modelos actuales capaces de crear textos, imágenes, música y diagnósticos médicos, la IA se consolidó como una de las tecnologías más influyentes de nuestro tiempo.
+            </p>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                Este trabajo aborda dos dimensiones clave: por un lado, los cambios en el mundo laboral frente a la automatización y la aparición de nuevos empleos; por otro, la influencia de la IA en nuestras habilidades cognitivas, como la creatividad, la memoria y el pensamiento crítico.
+            </p>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                Elegimos este eje porque creemos que se trata de un tema urgente, que afecta directamente a nuestra generación y a las que vienen. La IA no solo cambia cómo trabajamos, sino también cómo aprendemos, nos expresamos y entendemos el mundo.
+            </p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/614dad35-f464-4670-a6a1-3c89d4077efd.png" alt="Ilustración conceptual de un humano y un robot trabajando juntos, simbolizando la colaboración entre inteligencia artificial y humana" class="w-full h-auto rounded-lg shadow-md" />
+        </section>
+
+        <section id="objetivos" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Objetivos de la investigación</h2>
+            <ul class="list-disc pl-8 text-gray-700 space-y-3 text-lg">
+                <li>Analizar qué empleos desaparecen y qué nuevos roles surgen con la IA.</li>
+                <li>Reflexionar sobre cómo la IA impacta en las capacidades cognitivas humanas.</li>
+                <li>Comprender las implicancias éticas, sociales y ambientales de su uso.</li>
+                <li>Proponer ideas para adaptarnos a los cambios que genera esta tecnología.</li>
+            </ul>
+        </section>
+
+        <section id="historia" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Historia y evolución de la IA</h2>
+            <ul class="list-decimal pl-8 text-gray-700 space-y-3 text-lg mb-6">
+                <li><strong>1950s:</strong> Alan Turing propone la famosa pregunta “¿Pueden las máquinas pensar?” y diseña el Test de Turing.</li>
+                <li><strong>1960s–1970s:</strong> Primeras aplicaciones en el campo militar y científico, aunque limitadas.</li>
+                <li><strong>1997:</strong> Deep Blue de IBM derrota a Garry Kasparov en ajedrez, un punto de inflexión.</li>
+                <li><strong>2016:</strong> AlphaGo de Google DeepMind vence al campeón mundial de Go.</li>
+                <li><strong>2020–2023:</strong> Surgen sistemas generativos como GPT-3, DALL-E y MidJourney.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Cada avance no solo impactó en lo técnico, sino también en lo cultural: cambió la manera en que la sociedad percibe la relación entre máquinas y humanos.
+            </p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d255ad9b-c46e-4a0b-b0b8-8100b782dcbd.png" alt="Imagen histórica de computadoras antiguas y modernas, representando la evolución de la inteligencia artificial" class="w-full h-auto rounded-lg shadow-md mt-4" />
+        </section>
+
+        <section id="impacto-laboral" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">El impacto de la IA en el mundo laboral</h2>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                La automatización está transformando los empleos de forma acelerada. No se trata únicamente de cuántos puestos desaparecen, sino de cómo se reconfiguran los roles laborales.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="font-semibold text-indigo-700 mb-2">Ejemplos de empleos en riesgo:</h3>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                        <li>Cajeros reemplazados por cajas automáticas.</li>
+                        <li>Conductores frente al avance de los taxis y camiones autónomos.</li>
+                        <li>Operarios de fábricas desplazados por robots industriales.</li>
+                        <li>Empleados administrativos, ya que los algoritmos gestionan trámites y planillas.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-indigo-700 mb-2">Nuevos empleos que surgen:</h3>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                        <li>Diseñadores de prompts (interacción humano–IA).</li>
+                        <li>Ingenieros en ética digital.</li>
+                        <li>Especialistas en ciberseguridad y protección de datos.</li>
+                        <li>Psicólogos tecnológicos (atención a la salud mental frente al uso intensivo de pantallas e IA).</li>
+                        <li>Agricultores digitales que manejan drones, sensores e IA para optimizar cosechas.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                <strong>Estadísticas recientes:</strong>
+            </p>
+            <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+                <li>Foro Económico Mundial (2023): para 2027 el 14% de los empleos actuales desaparecerán.</li>
+                <li>McKinsey (2021): el 50% de las tareas actuales son automatizables con la tecnología existente.</li>
+                <li>OCDE (2021): los países que invierten en educación tecnológica presentan menor desempleo frente a la automatización.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Reflexión: No estamos frente a la desaparición del trabajo, sino a una redefinición. El desafío principal es la capacitación: quienes accedan a formación tecnológica tendrán más oportunidades, mientras que quienes no, corren riesgo de exclusión laboral.
+            </p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af098a22-af67-4dc6-8dba-dc8fd5da78ad.png" alt="Ilustración de robots y humanos trabajando juntos en un entorno laboral moderno" class="w-full h-auto rounded-lg shadow-md mt-4" />
+        </section>
+
+        <section id="habilidades-cognitivas" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Cómo la IA transforma nuestras habilidades cognitivas</h2>
+            <h3 class="font-semibold text-indigo-700 mb-2">Creatividad</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                La IA ya es capaz de componer música, generar imágenes artísticas y redactar textos. Esto plantea un dilema: ¿nos estamos volviendo menos creativos al depender de estas herramientas o, por el contrario, nos vuelven más creativos al expandir nuestras posibilidades? Muchos artistas hoy usan IA como “colega de trabajo”, no como reemplazo.
+            </p>
+            <h3 class="font-semibold text-indigo-700 mb-2">Memoria</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                Los buscadores y asistentes digitales nos permiten delegar información. Ya no memorizamos tanto, pero desarrollamos una memoria “externa” apoyada en lo digital. Esto libera espacio mental para tareas complejas, aunque también genera dependencia tecnológica.
+            </p>
+            <h3 class="font-semibold text-indigo-700 mb-2">Pensamiento crítico</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                Una de las mayores amenazas es aceptar respuestas de IA sin cuestionarlas. El pensamiento crítico se vuelve más necesario que nunca: debemos contrastar fuentes, evaluar la veracidad y detectar posibles sesgos.
+            </p>
+            <h3 class="font-semibold text-indigo-700 mb-2">Ejemplos y estudios</h3>
+            <ul class="list-disc pl-6 text-gray-700 space-y-1 mb-6">
+                <li>Stanford (2022): estudiantes que usaron IA para escribir lograron organizar mejor ideas complejas.</li>
+                <li>MIT (2021): los equipos que combinaron humanos e IA resolvieron problemas estratégicos más rápido que los humanos solos.</li>
+                <li>Cultura: la película <em>Her</em> (2013) plantea la dependencia emocional y cognitiva hacia una IA.</li>
+            </ul>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0bb4290c-a04e-4422-ae1c-eae8b90dbbb5.png" alt="Ilustración de cerebro humano y circuitos digitales fusionados, simbolizando la interacción entre mente humana y IA" class="w-full h-auto rounded-lg shadow-md mt-4" />
+        </section>
+
+        <section id="perspectivas-eticas" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Perspectivas éticas, sociales y ambientales</h2>
+            <h3 class="font-semibold text-indigo-700 mb-2">Ética y sesgos</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                Algoritmos de selección laboral o bancarios han discriminado por género o etnia. Si los datos de entrenamiento tienen prejuicios, la IA los reproduce.
+            </p>
+            <h3 class="font-semibold text-indigo-700 mb-2">Impacto social</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                El acceso desigual a la tecnología puede ampliar la brecha entre países desarrollados y en desarrollo, profundizando desigualdades globales.
+            </p>
+            <h3 class="font-semibold text-indigo-700 mb-2">Impacto ambiental</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed text-lg">
+                Centros de datos que sostienen a la IA consumen enormes cantidades de energía. La fabricación de chips y hardware genera huella de carbono. Posibles soluciones incluyen energías renovables, optimización de algoritmos y reciclaje tecnológico.
+            </p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c39085e0-7df4-43f0-b4f7-bc3f94d4abb2.png" alt="Imagen conceptual de un centro de datos con iconos de energía y reciclaje, representando el impacto ambiental de la IA" class="w-full h-auto rounded-lg shadow-md mt-4" />
+        </section>
+
+        <section id="conclusion" class="bg-white border border-gray-200 rounded-xl p-8 mb-8 shadow-lg hover:shadow-2xl transition-shadow">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 border-b-2 border-indigo-300 pb-2">Conclusión</h2>
+            <p class="mb-6 text-gray-700 leading-relaxed text-lg">
+                La inteligencia artificial representa una oportunidad y un desafío. En lo laboral, obliga a aceptar que algunos empleos desaparecerán, pero también ofrece nuevos campos de trabajo más especializados. En lo cognitivo, nos enfrenta a la necesidad de mantener lo que nos hace humanos: creatividad auténtica, pensamiento crítico y memoria significativa.
+            </p>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                El impacto de la IA no es positivo ni negativo en sí mismo: depende de cómo decidamos usarla. Nuestra propuesta es que la educación incorpore desde ahora competencias digitales, pensamiento crítico y un manejo responsable de la IA, para que las generaciones futuras no solo se adapten, sino que lideren los cambios.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gradient-to-r from-indigo-900 to-slate-800 text-white py-8 mt-12 text-center md:ml-80">
+        <p class="mb-6 text-lg">© 2025 Tomás Guerrero, Alejo Guzman, Camila Sanchez, Mia Posada. Todos los derechos reservados.</p>
+        <a href="#" class="hover:text-indigo-300 mx-4 transition">Política de privacidad</a>
+        <a href="#" class="hover:text-indigo-300 mx-4 transition">Descargos</a>
+        <a href="#" class="hover:text-indigo-300 mx-4 transition">Contacto</a>
+        <a href="#" class="hover:text-indigo-300 mx-4 transition">Contribuir</a>
+    </footer>
+</body>
+</html>
